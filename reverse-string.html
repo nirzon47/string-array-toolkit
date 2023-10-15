@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Reverse String</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="./scripts/reverseString.js" defer></script>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	</head>
+	<body
+		class="grid w-screen h-screen grid-rows-6 font-mono text-white bg-zinc-800"
+	>
+		<!-- Heading -->
+		<h1
+			class="grid items-center row-span-1 text-4xl font-bold text-center md:ml-12 md:mr-4 md:justify-center"
+		>
+			Reverse String.
+		</h1>
+
+		<!-- Actual content -->
+		<section
+			class="grid items-start justify-start grid-cols-12 row-span-4 md:row-span-5 md:mt-10"
+		>
+			<!-- Navigation panel for md+ viewport -->
+			<aside
+				class="justify-between hidden h-full col-span-4 pr-5 ml-4 lg:ml-8 md:grid"
+			>
+				<h2>
+					<a
+						href="index.html"
+						class="mb-4 text-lg leading-3 text-blue-400 duration-150 cursor-pointer hover:text-blue-500 visited:text-purple-500 hover:underline underline-offset-4"
+					>
+						Back to Home
+					</a>
+				</h2>
+				<nav>
+					<ul>
+						<li class="max-w-sm mb-2">
+							<a
+								href=""
+								class="leading-3 text-blue-400 duration-150 cursor-pointer hover:text-blue-500 visited:text-purple-500 hover:underline underline-offset-4"
+								>Reverse String (Current)</a
+							>
+						</li>
+						<li class="max-w-sm mb-2">
+							<a
+								href="anagram-checker.html"
+								class="leading-3 text-blue-400 duration-150 cursor-pointer hover:text-blue-500 visited:text-purple-500 hover:underline underline-offset-4"
+								>Anagram Checker</a
+							>
+						</li>
+						<li class="max-w-sm mb-2">
+							<a
+								href="intersection-finder.html"
+								class="leading-3 text-blue-400 duration-150 cursor-pointer hover:text-blue-500 visited:text-purple-500 hover:underline underline-offset-4"
+								>Array Intersection Finder</a
+							>
+						</li>
+						<li class="max-w-sm mb-2">
+							<a
+								href="palindrome-checker.html"
+								class="leading-3 text-blue-400 duration-150 cursor-pointer hover:text-blue-500 visited:text-purple-500 hover:underline underline-offset-4"
+								>String Palindrome Checker</a
+							>
+						</li>
+						<li class="max-w-sm mb-2">
+							<a
+								href="array-rotator.html"
+								class="leading-3 text-blue-400 duration-150 cursor-pointer hover:text-blue-500 visited:text-purple-500 hover:underline underline-offset-4"
+								>Array Rotator</a
+							>
+						</li>
+						<li class="max-w-sm mb-2">
+							<a
+								href="string-compress.html"
+								class="leading-3 text-blue-400 duration-150 cursor-pointer hover:text-blue-500 visited:text-purple-500 hover:underline underline-offset-4"
+								>String compressor</a
+							>
+						</li>
+						<li class="max-w-sm mb-2">
+							<a
+								href="target-to-sum.html"
+								class="leading-3 text-blue-400 duration-150 cursor-pointer hover:text-blue-500 visited:text-purple-500 hover:underline underline-offset-4"
+								>Pair that adds up to a target sum</a
+							>
+						</li>
+						<li class="max-w-sm mb-2">
+							<a
+								href="longest-substring.html"
+								class="leading-3 text-blue-400 duration-150 cursor-pointer hover:text-blue-500 visited:text-purple-500 hover:underline underline-offset-4"
+								>Longest substring without repitition finder</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+
+			<!-- Option to go back to main page for md- viewport -->
+			<a
+				href="index.html"
+				class="col-span-12 mb-16 text-center text-blue-400 md:hidden hover:text-blue-500 visited:text-purple-500"
+				>Back to Home</a
+			>
+
+			<!-- Main content -->
+			<main
+				class="grid col-span-12 row-span-5 text-center gap-y-12 md:col-span-8 md:h-[65vh] md:text-left md:border-l-[1px] border-zinc-700 md:pl-8"
+			>
+				<!-- Form Area -->
+				<section class="flex flex-col col-span-12 gap-y-4">
+					<p class="md:text-lg">Enter the string</p>
+					<input
+						type="text"
+						name="string"
+						id="string"
+						class="px-2 py-1 mx-auto text-xl leading-10 text-black rounded-md outline-none md:w-7/12 md:mx-0"
+					/>
+					<button
+						onclick="reverseString()"
+						class="px-2 py-1 mx-auto duration-150 bg-blue-400 rounded-sm hover:bg-blue-500 w-max md:mx-0"
+					>
+						Reverse
+					</button>
+				</section>
+
+				<!-- Result area -->
+				<section class="col-span-12">
+					<p class="underline underline-offset-4">Result</p>
+					<p id="result" class="mt-4 text-xl text-red-200">&nbsp;</p>
+				</section>
+			</main>
+		</section>
+	</body>
+</html>
