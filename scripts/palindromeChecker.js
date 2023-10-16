@@ -1,6 +1,7 @@
 function palindromeChecker() {
 	const resultElement = document.getElementById('result')
-	const s = document.getElementById('s').value
+	let s = document.getElementById('s').value
+	s = s.toLowerCase()
 
 	const temp = s.split('')
 
