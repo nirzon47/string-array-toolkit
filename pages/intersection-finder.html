@@ -3,10 +3,14 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Anagram Checker</title>
-		<link rel="stylesheet" href="style.css" />
-		<script src="./scripts/anagramChecker.js" defer></script>
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<title>Array Intersection Finder</title>
+		<link rel="stylesheet" href="../style.css" />
+		<script src="../scripts/arrayIntersection.js" defer></script>
+		<link
+			rel="shortcut icon"
+			href="../assets/favicon.ico"
+			type="image/x-icon"
+		/>
 	</head>
 	<body
 		class="grid w-screen h-screen grid-rows-6 font-mono text-white bg-zinc-800"
@@ -15,7 +19,7 @@
 		<h1
 			class="grid items-center row-span-1 text-4xl font-bold text-center md:ml-12 md:mr-4 md:justify-center"
 		>
-			Anagram Checker.
+			Array Intersection Finder.
 		</h1>
 
 		<!-- Actual content -->
@@ -28,7 +32,7 @@
 			>
 				<h2>
 					<a
-						href="index.html"
+						href="../index.html"
 						class="mb-4 text-lg leading-3 text-blue-400 duration-150 cursor-pointer hover:text-blue-500 visited:text-purple-500 hover:underline underline-offset-4"
 					>
 						Back to Home
@@ -38,56 +42,56 @@
 					<ul>
 						<li class="max-w-sm mb-2">
 							<a
-								href=""
+								href="./reverse-string.html"
 								class="leading-3 text-blue-400 duration-150 cursor-pointer hover:text-blue-500 visited:text-purple-500 hover:underline underline-offset-4"
-								>Reverse String (Current)</a
+								>Reverse String</a
 							>
 						</li>
 						<li class="max-w-sm mb-2">
 							<a
-								href="anagram-checker.html"
+								href=""
 								class="leading-3 text-blue-400 duration-150 cursor-pointer hover:text-blue-500 visited:text-purple-500 hover:underline underline-offset-4"
 								>Anagram Checker</a
 							>
 						</li>
 						<li class="max-w-sm mb-2">
 							<a
-								href="intersection-finder.html"
+								href="./intersection-finder.html"
 								class="leading-3 text-blue-400 duration-150 cursor-pointer hover:text-blue-500 visited:text-purple-500 hover:underline underline-offset-4"
-								>Array Intersection Finder</a
+								>Array Intersection Finder (Current)</a
 							>
 						</li>
 						<li class="max-w-sm mb-2">
 							<a
-								href="palindrome-checker.html"
+								href="./palindrome-checker.html"
 								class="leading-3 text-blue-400 duration-150 cursor-pointer hover:text-blue-500 visited:text-purple-500 hover:underline underline-offset-4"
 								>String Palindrome Checker</a
 							>
 						</li>
 						<li class="max-w-sm mb-2">
 							<a
-								href="array-rotator.html"
+								href="./array-rotator.html"
 								class="leading-3 text-blue-400 duration-150 cursor-pointer hover:text-blue-500 visited:text-purple-500 hover:underline underline-offset-4"
 								>Array Rotator</a
 							>
 						</li>
 						<li class="max-w-sm mb-2">
 							<a
-								href="string-compress.html"
+								href="./string-compress.html"
 								class="leading-3 text-blue-400 duration-150 cursor-pointer hover:text-blue-500 visited:text-purple-500 hover:underline underline-offset-4"
 								>String compressor</a
 							>
 						</li>
 						<li class="max-w-sm mb-2">
 							<a
-								href="target-to-sum.html"
+								href="./target-to-sum.html"
 								class="leading-3 text-blue-400 duration-150 cursor-pointer hover:text-blue-500 visited:text-purple-500 hover:underline underline-offset-4"
 								>Pair that adds up to a target sum</a
 							>
 						</li>
 						<li class="max-w-sm mb-2">
 							<a
-								href="longest-substring.html"
+								href="./longest-substring.html"
 								class="leading-3 text-blue-400 duration-150 cursor-pointer hover:text-blue-500 visited:text-purple-500 hover:underline underline-offset-4"
 								>Longest substring without repitition finder</a
 							>
@@ -98,7 +102,7 @@
 
 			<!-- Option to go back to main page for md- viewport -->
 			<a
-				href="index.html"
+				href="../index.html"
 				class="col-span-12 mb-16 text-center text-blue-400 md:hidden hover:text-blue-500 visited:text-purple-500"
 				>Back to Home</a
 			>
@@ -109,22 +113,26 @@
 			>
 				<!-- Form Area -->
 				<section class="flex flex-col col-span-12 gap-y-4">
-					<p class="md:text-lg">Enter the first string</p>
+					<p class="md:text-lg">
+						Enter the first array with space between each elements
+					</p>
 					<input
 						type="text"
-						name="s"
-						id="s"
+						name="nums1"
+						id="nums1"
 						class="px-2 py-1 mx-auto text-xl leading-10 text-black rounded-md outline-none md:w-7/12 md:mx-0"
 					/>
-					<p class="md:text-lg">Enter the second string</p>
+					<p class="md:text-lg">
+						Enter the second array with space between each elements
+					</p>
 					<input
 						type="text"
-						name="t"
-						id="t"
+						name="nums2"
+						id="nums2"
 						class="px-2 py-1 mx-auto text-xl leading-10 text-black rounded-md outline-none md:w-7/12 md:mx-0"
 					/>
 					<button
-						onclick="anagramChecker()"
+						onclick="arrayIntersection()"
 						class="px-2 py-1 mx-auto duration-150 bg-blue-400 rounded-sm hover:bg-blue-500 w-max md:mx-0"
 					>
 						Find

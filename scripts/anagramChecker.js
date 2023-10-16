@@ -17,10 +17,10 @@ function anagramChecker() {
 
 	for (let i = 0; i < 26; i++) {
 		if (sArr[i] !== tArr[i]) {
-			resultElement.innerHTML = 'Not Anagram'
+			resultElement.innerText = 'Not Anagram'
 			return
 		}
 	}
 
-	resultElement.innerHTML = 'Anagram'
+	resultElement.innerText = 'Anagram'
 }

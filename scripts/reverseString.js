@@ -23,6 +23,6 @@ function reverseString() {
 
 	res = res.join('')
 
-	resultElement.innerHTML = ''
-	resultElement.innerHTML = res
+	resultElement.innerText = ''
+	resultElement.innerText = res
 }
